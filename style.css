@@ -1,6 +1,6 @@
 
 body {
- max-width: 1500px;
+ max-width: 2500px;
  font-family: 'Arial', sans-serif;
  padding: 0;
  margin: 0 auto;
@@ -14,7 +14,6 @@ body {
 .wrapper {
  padding: 72px 32px 5px;
 }
-
 header {
  width: 100%;
  background-color: #32363b;
@@ -27,6 +26,7 @@ header {
 }
 
 .logo {
+ padding-left: 20px;
  height: 50px;
 }
 .burger-checkbox {
@@ -38,7 +38,7 @@ header {
  cursor: pointer;
  display: block;
  top: 20px;
- right: 10px;
+ right: 20px;
  position: fixed;
  border: none;
  background: transparent;
@@ -98,9 +98,7 @@ header {
  text-align: center;
  text-decoration: none;
 }
-/*.menu-item:hover {*/
-/* background: rgba(255,255,255,.2)*/
-/*}*/
+
 .burger-checkbox:checked ~ .menu-list {
  transform: translateX(0);
 }
@@ -181,20 +179,14 @@ img {
   box-sizing: border-box;
  }
 }
-/*.features-section {*/
-/* padding: 60px 20px;*/
-/* margin-top: 50px*/
-/*}*/
-/* Общий стиль секции */
 .features-section {
- /*background-color: #f9f9f9; !* Светлый фон *!*/
+ justify-content: center;
  padding: 60px 20px; /* Внешние отступы */
  margin-top: 50px;
 }
-
 .container {
  max-width: 500px;
- /*margin: 0 auto;*/
+ margin: 0 auto;
 }
 .footer-container {
  max-width: 500px;
@@ -206,8 +198,8 @@ img {
 }
 .container-features {
  max-width: 1200px;
-}
 
+}
 /* Сетка для фич */
 .features-grid {
  justify-content: center;
@@ -215,7 +207,6 @@ img {
  flex-wrap: wrap;
  gap: 20px;
 }
-
 /* Карточка для каждой фичи */
 .feature {
  border: 1px solid #e0e0e0;
@@ -225,9 +216,6 @@ img {
  transition: transform 0.3s ease, box-shadow 0.3s ease;
  width: 300px;
 }
-
-
-
 /* Заголовок и текст */
 .feature h3 {
  font-size: 24px;
@@ -236,14 +224,12 @@ img {
  margin-bottom: 10px;
  text-align: center;
 }
-
 .feature p {
  font-size: 16px;
  color: #555;
  line-height: 1.6;
  color: #020101; /* Цвет акцента */
 }
-/* Общий стиль для секции */
 .contact-section {
  /*background-color: #f4f7fc; !* Светлый фон *!*/
  padding: 60px 20px;
@@ -259,7 +245,6 @@ img {
  text-align: center;
 }
 
-/* Заголовок секции */
 .section-title {
  font-size: 36px;
  text-align: center;
@@ -267,7 +252,6 @@ img {
  margin-bottom: 20px;
 }
 
-/* Всплывающее сообщение (успех/ошибка) */
 #response-message {
  text-align: center;
  margin-top: 20px;
@@ -275,7 +259,6 @@ img {
  color: #28a745; /* Зеленый для успешной отправки */
 }
 
-/* Форматирование полей ввода */
 form label {
  font-size: 16px;
  font-weight: bold;
@@ -295,7 +278,6 @@ textarea {
  font-size: 16px;
  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
-/* Стиль для input[type="text"], input[type="email"], input[type="tel"] */
 input:focus {
  border-color: #0b8b70;
  outline: none;
@@ -343,434 +325,3 @@ footer {
  text-align: center;
  padding: 2px 0;
 }
-
-/*footer p {*/
-/* margin: 0;*/
-/*}*/
-
-/*!* Адаптивность для мобильных устройств *!*/
-/*@media (max-width: 768px) {*/
-/* .container {*/
-/*  padding: 15px;*/
-/* }*/
-
-/* .section-title {*/
-/*  font-size: 28px;*/
-/* }*/
-
-/* form input,*/
-/* form textarea {*/
-/*  font-size: 14px;*/
-/* }*/
-
-/* form button {*/
-/*  font-size: 16px;*/
-/* }*/
-/*}*/
-
-
-
-
-
-/*!* Общие стили *!*/
-/*header {*/
-/* display: flex;*/
-/* justify-content: space-around;*/
-/* align-items: center; !* Чтобы содержимое было выровнено по вертикали *!*/
-/* position: fixed;*/
-/* top: 0;*/
-/* left: 0;*/
-/* width: 100%;*/
-/* height: 70px; !* Задаём нужную высоту *!*/
-/* background: #32363b;*/
-/* color: #fff;*/
-/* z-index: 100*/
-/*}*/
-
-/*header .logo {*/
-/* max-height: 60px;*/
-/* margin-right: 20px; !* немного отступа после логотипа *!*/
-/* margin-left: 20px;*/
-
-/*}*/
-/*header .secondary-image {*/
-/* max-height: 50px; !* например, чуть поменьше *!*/
-/* margin-right: 20px; !* отступ перед навигацией *!*/
-/* margin-left: 20px;*/
-/*}*/
-/*.middle-image-wrapper {*/
-/* flex: 1;*/
-/* display: flex;*/
-/* justify-content: left;*/
-/*}*/
-/*header a.btn {*/
-/* display: inline-block; !* Делает ссылку блочно-строчной для удобства работы с размерами и отступами *!*/
-/* background: transparent; !* Или любой цвет фона, который вам нужен *!*/
-/* color: #fff; !* Белый цвет текста *!*/
-/* padding: 10px 20px; !* Внутренние отступы для создания формы кнопки *!*/
-/* border: 2px solid #fff; !* Рамка для визуального выделения, если нужно *!*/
-/* border-radius: 20px; !* Скругленные углы, можно поменять значение для достижения нужной формы *!*/
-/* text-decoration: none; !* Убирает подчеркивание ссылки *!*/
-/* font-weight: bold; !* Жирный текст *!*/
-/* transition: background 0.3s, color 0.3s; !* Анимация при наведении *!*/
-/* margin-right: 20px; !* немного отступа после логотипа *!*/
-
-/*}*/
-
-/*header a.btn:hover {*/
-/* background: #fff; !* При наведении фон становится белым *!*/
-/* color: #000; !* А текст — черным для контраста *!*/
-/*}*/
-/*#services {*/
-/* scroll-margin-top: 40px;*/
-/*}*/
-/*#contact {*/
-/* scroll-margin-top: 40px;*/
-/*}*/
-/*#about {*/
-/* scroll-margin-top: 40px;*/
-/*}*/
-
-/** {*/
-/* margin: 0;*/
-/* padding: 0;*/
-/* box-sizing: border-box;*/
-/*}*/
-
-/*body {*/
-/* font-family: 'Arial', sans-serif;*/
-/* line-height: 1.6;*/
-/* color: #333;*/
-/*}*/
-
-/*h1, h2, h3 {*/
-/* margin-bottom: 10px;*/
-/*}*/
-
-/*!* Header *!*/
-/*.header {*/
-/* background: #77777a;*/
-/* !*background: linear-gradient(to right, #5fc49e, #005bb5);*!*/
-/* color: #fff;*/
-/* text-align: center;*/
-/* padding: 100px 20px;*/
-
-/*}*/
-
-/*.header h1 {*/
-/* font-size: 2.5rem;*/
-/* margin-bottom: 10px;*/
-/*}*/
-
-/*.header p {*/
-/* font-size: 1.2rem;*/
-/* margin-bottom: 20px;*/
-/*}*/
-
-/*.header .btn {*/
-/* background: #fff;*/
-/* color: #0078d7;*/
-/* padding: 10px 20px;*/
-/* text-decoration: none;*/
-/* font-weight: bold;*/
-/* border-radius: 5px;*/
-/* transition: background 0.3s;*/
-/*}*/
-
-/*.header .btn:hover {*/
-/* background: #e0e0e0;*/
-/*}*/
-/*#hero,#intro,#WhyYD,#solutionsForEveryone,#about {*/
-/* display: flex;*/
-/* justify-content: space-between;*/
-/* gap: 80px;*/
-/* margin-top: 50px;*/
-/* max-width: 1500px;*/
-/* background-color: #f6f6f6;*/
-/*}*/
-/*.container {*/
-/* max-width: 500px;*/
-/*}*/
-
-/*.title {*/
-/* text-align: left;*/
-/*}*/
-/*.subtitle {*/
-/* margin-top: 10px;*/
-/*}*/
-
-/*.content-img {*/
-/* width: 50%;*/
-/* border-radius: 10px;*/
-/* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
-/* transform: scale(1);*/
-/* transition: transform 0.5s ease-in-out;*/
-/*}*/
-/*.content-img:hover{*/
-/* transform: scale(1.2);*/
-/*}*/
-/*.container > h2 {*/
-/* font-size: 48px;*/
-/*}*/
-
-/*!* Sections *!*/
-/*section {*/
-/* padding: 50px 20px;*/
-/*}*/
-
-/*section h2 {*/
-/* font-size: 2rem;*/
-/* margin-bottom: 20px;*/
-/* text-align: center;*/
-/*}*/
-
-/*section p {*/
-/* text-align: center;*/
-/* margin: 0 auto 20px auto;*/
-/*}*/
-
-/*#services .services-grid {*/
-/* display: flex;*/
-/* flex-wrap: wrap;*/
-/* gap: 20px;*/
-/* justify-content: center;*/
-/*}*/
-
-/*#services .service {*/
-/* background: #f3eeee;*/
-/* border-radius: 10px;*/
-/* padding: 20px;*/
-/* flex: 1 1 calc(33.333% - 40px);*/
-/* width: 100%;*/
-/* text-align: center;*/
-/* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
-/*}*/
-
-/*#services .service h3 {*/
-/* font-size: 1.5rem;*/
-/* margin-bottom: 10px;*/
-/*}*/
-
-/*#services .service p {*/
-/* font-size: 0.9rem;*/
-/*}*/
-
-/*!* Footer *!*/
-/*footer {*/
-/* background: #333;*/
-/* color: #eeeaea;*/
-/* text-align: center;*/
-/* padding: 20px 0;*/
-/*}*/
-
-/*footer p {*/
-/* margin: 0;*/
-/*}*/
-
-/*!* Адаптивность *!*/
-/*@media (max-width: 768px) {*/
-/* #services .service {*/
-/*  flex: 1 1 100%;*/
-/* }*/
-
-/* header h1 {*/
-/*  font-size: 2rem;*/
-/* }*/
-/* header h3 {*/
-/*  font-size: 2rem;*/
-/* }*/
-
-/* header p {*/
-/*  font-size: 1rem;*/
-/* }*/
-/*}*/
-/*.about-image {*/
-/* display: inline;*/
-/* max-width: 100%;*/
-/* margin: 20px auto; !* Отступы сверху и центрирование *!*/
-/* border-radius: 10px; !* Скруглённые углы *!*/
-/* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); !* Лёгкая тень *!*/
-/*}*/
-/*.globalWrapper {*/
-/* max-width: 90%;*/
-/* margin: 0 auto;*/
-/*}*/
-/*@media (max-width: 768px) {*/
-/* #hero {*/
-/*  flex-direction: column;*/
-/* }*/
-/*}*/
-
-
-
-
-
-
-
-
-/*!* Общий стиль секции *!*/
-/*.features-section {*/
-/* !*background-color: #f9f9f9; !* Светлый фон *!*!*/
-/* padding: 60px 20px; !* Внешние отступы *!*/
-/* margin-top: 50px;*/
-/*}*/
-
-/*.container {*/
-/* max-width: 1200px;*/
-/* margin: 0 auto;*/
-/* padding: 0 15px;*/
-/*}*/
-
-/*.section-title {*/
-/* font-size: 36px;*/
-/* text-align: center;*/
-/* margin-bottom: 40px;*/
-/* color: #333;*/
-/*}*/
-
-/*!* Сетка для фич *!*/
-/*.features-grid {*/
-/* display: grid;*/
-/* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); !* Адаптивная сетка *!*/
-/* gap: 20px;*/
-/*}*/
-
-/*!* Карточка для каждой фичи *!*/
-/*.feature {*/
-/* border: 1px solid #e0e0e0;*/
-/* border-radius: 8px;*/
-/* padding: 20px;*/
-/* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
-/* transition: transform 0.3s ease, box-shadow 0.3s ease;*/
-/*}*/
-
-/*.feature:hover {*/
-/* transform: translateY(-5px);*/
-/* box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);*/
-/*}*/
-
-/*!* Заголовок и текст *!*/
-/*.feature h3 {*/
-/* font-size: 24px;*/
-/* !*color: #007BFF; !* Цвет акцента *!*!*/
-/* color: #0b8b70; !* Цвет акцента *!*/
-/* margin-bottom: 10px;*/
-/* text-align: center;*/
-/*}*/
-
-/*.feature p {*/
-/* font-size: 16px;*/
-/* color: #555;*/
-/* line-height: 1.6;*/
-/* color: #020101; !* Цвет акцента *!*/
-/*}*/
-/*body {*/
-/* background-color: #f6f6f6;*/
-/*}*/
-/*!* Общий стиль для секции *!*/
-/*.contact-section {*/
-/* !*background-color: #f4f7fc; !* Светлый фон *!*!*/
-/* padding: 60px 20px;*/
-/* font-family: 'Arial', sans-serif;*/
-/*}*/
-
-/*#contact {*/
-/* max-width: 800px;*/
-/* margin: 0 auto;*/
-/* padding: 20px;*/
-/* background-color: #fff;*/
-/* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);*/
-/* border-radius: 8px;*/
-/*}*/
-
-/*!* Заголовок секции *!*/
-/*.section-title {*/
-/* font-size: 36px;*/
-/* text-align: center;*/
-/* color: #333;*/
-/* margin-bottom: 20px;*/
-/*}*/
-
-/*!* Всплывающее сообщение (успех/ошибка) *!*/
-/*#response-message {*/
-/* text-align: center;*/
-/* margin-top: 20px;*/
-/* font-size: 16px;*/
-/* color: #28a745; !* Зеленый для успешной отправки *!*/
-/*}*/
-
-/*!* Форматирование полей ввода *!*/
-/*form label {*/
-/* font-size: 16px;*/
-/* font-weight: bold;*/
-/* margin-bottom: 5px;*/
-/* display: block;*/
-/* color: #333;*/
-/*}*/
-
-/*input,*/
-/*textarea {*/
-/* width: 100%;*/
-/* padding: 10px;*/
-/* margin-bottom: 15px;*/
-/* border: 1px solid #ccc;*/
-/* border-radius: 6px;*/
-/* font-size: 16px;*/
-/* transition: border-color 0.3s ease, box-shadow 0.3s ease;*/
-/*}*/
-/*!* Стиль для input[type="text"], input[type="email"], input[type="tel"] *!*/
-/*input:focus {*/
-/* border-color: #0b8b70;*/
-/* outline: none;*/
-/* box-shadow: 0 0 8px rgb(11, 139, 112);*/
-/*}*/
-
-/*!* Стиль для textarea *!*/
-/*form textarea {*/
-/* height: 150px;*/
-/* resize: vertical;*/
-/* outline: none;*/
-/*}*/
-
-/*form textarea:focus {*/
-/* border-color: #0b8b70;*/
-/* box-shadow: 0 0 8px rgb(11, 139, 112);*/
-/*}*/
-
-/*!* Стиль для кнопки отправки *!*/
-/*form button {*/
-/* background-color: #77777a;*/
-/* color: white;*/
-/* padding: 12px 20px;*/
-/* font-size: 18px;*/
-/* border: none;*/
-/* border-radius: 6px;*/
-/* cursor: pointer;*/
-/* width: 100%;*/
-/* transition: background-color 0.3s ease;*/
-/*}*/
-
-/*form button:hover {*/
-/* background-color: #0b8b70;*/
-/*}*/
-
-/*!* Адаптивность для мобильных устройств *!*/
-/*@media (max-width: 768px) {*/
-/* .container {*/
-/*  padding: 15px;*/
-/* }*/
-
-/* .section-title {*/
-/*  font-size: 28px;*/
-/* }*/
-
-/* form input,*/
-/* form textarea {*/
-/*  font-size: 14px;*/
-/* }*/
-
-/* form button {*/
-/*  font-size: 16px;*/
-/* }*/
-/*}*/
-
