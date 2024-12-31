@@ -7,7 +7,7 @@
 })();
 
 // Отправка данных формы
-document.getElementById('contact').addEventListener('submit', function(event) {
+document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault(); // Предотвращаем стандартную отправку формы
 
     // Получаем данные из формы
